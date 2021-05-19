@@ -1,0 +1,159 @@
+@import url(//db.onlinewebfonts.com/c/fb7ca112e163141ae35c966e2acd0beb?family=GGX88W01-ExtraLight);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container .box, .container .header .header__text {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(47, 46, 53, 0.5);
+}
+
+body {
+  padding: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr repeat(2, 0.3fr) repeat(3, 1fr) repeat(2, 0.3fr) 1fr 1.7fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas: ". . h h h h h h h . ." ". . h h h h h h h . ." ". . . . . . . . . . ." ". . . . t t t . . . ." ". . . . t t t . . . ." "s s s . t t t . c c c" "s s s . . . . . c c c" "s s s . k k k . c c c" ". . . . k k k . . . ." ". . . . k k k . . . .";
+}
+.container .header {
+  grid-area: h;
+  color: #2f2e35;
+  text-align: center;
+  font-family: "GGX88W01-ExtraLight";
+}
+.container .header .header__title {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+.container .header .header__subtitle {
+  padding-bottom: 3%;
+}
+.container .header .style_header {
+  font-size: 26px;
+}
+.container .header .style_h2 {
+  font-weight: 900;
+}
+.container .teamBuilder {
+  grid-area: t;
+  border-top: 3px solid #b15760;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container .supervisor {
+  grid-area: s;
+  border-top: 3px solid #64babe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container .karma {
+  grid-area: k;
+  border-top: 3px solid #ebba3a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container .calculator {
+  grid-area: c;
+  border-top: 3px solid #5c8ebd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container .box {
+  padding: 5%;
+  border-radius: 5px;
+}
+.container .box .box__title {
+  font-weight: 700;
+  margin-bottom: 5%;
+  color: #2f2e35;
+}
+.container .box .box__img {
+  width: 20%;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". h ." ". s ." ". t ." ". k ." ". c .";
+  }
+  .container .header {
+    margin-bottom: 3%;
+  }
+  .container .box {
+    margin-bottom: 3%;
+  }
+}
